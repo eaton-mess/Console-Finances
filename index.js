@@ -144,8 +144,13 @@ function findGreatestDecrease(data) {
 console.log("Financial Analysis");
 console.log("Total Months:", calculateTotalMonths(finances));
 console.log("Total: $", calculateNetTotal(finances));
+//doesn't look quite right, return to the drawing board
 console.log("Average Change: $", calculateAverageChange(finances).toFixed(2));
 
+//greatest increase in profits/losses
 const greatestIncrease = findGreatestIncrease(finances);
 console.log("Greatest Increase in Profits/Losses:", greatestIncrease.date, "($", greatestIncrease.amount, ")");
 
+//greatest decrease in profits/losses
+const greatestDecrease = findGreatestDecrease(finances);
+console.log("Greatest Decrease in Profits/Losses:", greatestDecrease.date, "($", greatestDecrease.amount, ")");
