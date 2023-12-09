@@ -100,3 +100,26 @@ function calculateNetTotal(data) {
   });
   return total;
 }
+
+//function to calcuklate average change in profits/losses
+function calculateAverageChange(data) {
+  let totalChange = 0;
+  for (let i = 1; i < data.length; i++) {
+    totalChange += data[i][1] - data[i - 1][1];
+    return totalChange / (data.length - 1);
+  }
+}
+
+//function to find the greatest increase in profits/losses 
+function findGreatestIncrease(data) {
+  let greatestIncrease = { date: "", amount: 0};
+  for (let i = 1; i < data.length; i++) {
+    const change = data[i][1] - data[i - 1][1];
+    if (change > greatestIncrease.amount) {
+      greatestIncrease.date = data[i][0];
+      greatestIncrease.amount = change;
+    }
+  }
+  return greatestIncrease;
+}
+
