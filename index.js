@@ -146,3 +146,6 @@ console.log("Total Months:", calculateTotalMonths(finances));
 console.log("Total: $", calculateNetTotal(finances));
 console.log("Average Change: $", calculateAverageChange(finances).toFixed(2));
 
+const greatestIncrease = findGreatestIncrease(finances);
+console.log("Greatest Increase in Profits/Losses:", greatestIncrease.date, "($", greatestIncrease.amount, ")");
+
