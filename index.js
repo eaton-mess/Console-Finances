@@ -112,7 +112,7 @@ function calculateAverageChange(data) {
 
 //function to find the greatest increase in profits/losses 
 function findGreatestIncrease(data) {
-  let greatestIncrease = { date: "", amount: 0};
+  let greatestIncrease = { date: "", amount: 0 };
   for (let i = 1; i < data.length; i++) {
     const change = data[i][1] - data[i - 1][1];
     if (change > greatestIncrease.amount) {
@@ -123,3 +123,18 @@ function findGreatestIncrease(data) {
   return greatestIncrease;
 }
 
+//function to find the greatest decrease in profits.losses
+//use same template for increase but amend
+function findGreatestDecrease(data) {
+  let greatestDecrease = { date: "", amount: 0 };
+  for (let i = 1; i < data.length; i++) {
+    const change = data[i][1] - data[i - 1][1];
+    if (change < greatestDecrease.amount) {
+      greatestDecrease.date = data[i][0];
+      greatestDecrease.amount = change;
+    }
+  }
+  return greatestDecrease;
+}
+
+//check the above formulas make sense, then console.log
