@@ -86,3 +86,17 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+//function to caculate total number of months
+function calculateTotalMonths(data) {
+  return data.length;
+}
+
+//function to calculate net total amount of profits/losses
+function calculateNetTotal(data) {
+  let total = 0;
+  data.forEach(entry => {
+    total += entry[1];
+  });
+  return total;
+}
