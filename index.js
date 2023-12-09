@@ -138,3 +138,11 @@ function findGreatestDecrease(data) {
 }
 
 //check the above formulas make sense, then console.log
+//git push the below
+//everything looks correct except the average change
+
+console.log("Financial Analysis");
+console.log("Total Months:", calculateTotalMonths(finances));
+console.log("Total: $", calculateNetTotal(finances));
+console.log("Average Change: $", calculateAverageChange(finances).toFixed(2));
+
