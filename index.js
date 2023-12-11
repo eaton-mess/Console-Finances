@@ -110,6 +110,11 @@ function calculateNetTotal(data) {
 }
 
 //function to calcuklate average change in profits/losses
+//for loops that starts from index '1' and goes through each elemtent of the data array
+//for each iterati0on, it caculates the profit/losses between the current month (data[i][1]) and the previous month (data[i-1][1])
+//data[i][1] represents profits/losses value of the current month
+//data[i - 1][1] represents profits/losses value of the previous month
+//the result of subtracting previous month's value from the current is added to the 'totalChange' variable. 
 function calculateAverageChange(data) {
   let totalChange = 0;
   for (let i = 1; i < data.length; i++) {
