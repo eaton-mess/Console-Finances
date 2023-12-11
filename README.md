@@ -2,11 +2,9 @@
 
 ## Description 
 
-This repository ("Bootstrap-Portfolio-Lauren") aims to re-invent the previous challenge ("Lauren Eaton - Portfolio") with the use of Bootstrap to both input pre-made cards, grids and navigation bars and reducing the use of media queries by using their pre-estimated breakpoints. It should not only function as a portfolio for future use throughout the course, but should also navigate well using various links and buttons, as well as customising the pre-made Bootstrap code to fit the colour scheme and needs of my own webpage. Placeholders have been implemented on empty sections to show that further down the line, as the portfolio grows, content can be easily added with necessary links and still keep the integrity of the page. 
+This repository ("Console-Finances") aims to use the existing numbers provided within the JavaScript file and calciulate various totals and equations to result in the desired outcome. The JavaScript that follows should be functional and provide not only accurate data, but in a way that makes it easy to consume and read. It utilises numerous variables and methods such as the 'for loop' to result in a clear, definitive answer in response to the needs of this challenge.
 
-
-
-https://eatontechnology.github.io/Bootstrap-Portfolio-Lauren/
+https://eatontechnology.github.io/Console-Finances/
 
 ## Table of Contents 
 
@@ -16,14 +14,11 @@ https://eatontechnology.github.io/Bootstrap-Portfolio-Lauren/
 
 ## Usage 
 
-This portfolio should display all existing and future content cohesively on both desktop and smaller displays, adjusting the content so that it is easily accessible. Users are able to navigate to different sections of the page using the navigation bar, as well as complimentary links to my GitHub account and a link to my CV on Google Drive.
+This repository should display all necesary results that were requested by the client, such as the total number of months, the largest increase/decrease in profits/losses as well as the average change over the period of time specified. It should not only be accurate, but easy to read and edit if need be without having to adjust too much of the existing formula.
 
-The projects section contains a grid, utilising the card functions in Bootstrap, detailing all existing projects as well as placeholders, all with suitable images that, when interacted with, directs the user to the necessary page.
+In the console section of the Chrome page, exists the list of the resulting calculations, all titled clearly with their results concise. 
 
-In addition to this, the Contacts section contains not only links to my personal instagram and LinkedIn profile, it contains an email icon that, when pressed, will automatically direct the user to their default application to initiate an e-mail.
-
-![alt text](https://github.com/eatontechnology/Bootstrap-Portfolio-Lauren/blob/main/images/Screenshot%201.jpg)
-![alt text](https://github.com/eatontechnology/Bootstrap-Portfolio-Lauren/blob/main/images/Screenshot%202.jpg)
+![alt text](https://github.com/eatontechnology/Console-Finances/blob/main/_images/javascript%20screenshot.png)
 
 ## Author
 
@@ -40,6 +35,7 @@ Licensed under MIT.
 ![badmath](https://img.shields.io/badge/CSS%20-%20purple)
 ![badmath](https://img.shields.io/badge/MIT%20-%20License%20-%20green)
 ![badmath](https://img.shields.io/badge/bootstrap-purple)
+![badmath](https://img.shields.io/badge/JavaScript-green)
 
 
 
