@@ -1,3 +1,4 @@
+//given numbers
 var finances = [
   ['Jan-2010', 867884],
   ['Feb-2010', 984655],
@@ -88,11 +89,18 @@ var finances = [
 ];
 
 //function to caculate total number of months
+//takes one parameter 'data'
+//return statement gives us the length property of the 'data' array above, returning the number of elements in the array
+//total months is assigned '86' here because there are that number of elemtents in the array, each representing a month's data
 function calculateTotalMonths(data) {
   return data.length;
 }
 
 //function to calculate net total amount of profits/losses
+//takes array 'data' and calculates net total of profits/losses
+//the 'let' makes the variable a zero, it will be used to gather the net total
+//using for.each over the data array. For each entry it adds the value at index 1 to the total variable
+//the entry[1] corresponds to the profit/losses value of that current month
 function calculateNetTotal(data) {
   let total = 0;
   data.forEach(entry => {
@@ -106,8 +114,8 @@ function calculateAverageChange(data) {
   let totalChange = 0;
   for (let i = 1; i < data.length; i++) {
     totalChange += data[i][1] - data[i - 1][1];
-    return totalChange / (data.length - 1);
   }
+  return totalChange / (data.length - 1);
 }
 
 //function to find the greatest increase in profits/losses 
