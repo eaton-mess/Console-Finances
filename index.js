@@ -124,6 +124,10 @@ function calculateAverageChange(data) {
 }
 
 //function to find the greatest increase in profits/losses 
+//creates variable greatestIncrease as an object with 'date' and 'amount', it uses these to keep track of months with the greatest increase in profits/losses
+//uses for loop starting from index 1
+//using the method previously for the data representation of current and previous months
+//if the calculated change is greater than the current greatest increase, the 'if' variable below will update the greatestIncrease with the new date and value
 function findGreatestIncrease(data) {
   let greatestIncrease = { date: "", amount: 0 };
   for (let i = 1; i < data.length; i++) {
@@ -137,7 +141,8 @@ function findGreatestIncrease(data) {
 }
 
 //function to find the greatest decrease in profits.losses
-//use same template for increase but amend
+//uses the same methodology as the amount, but for decreases instead
+//if variable is changed from more than to less than to reflect this change
 function findGreatestDecrease(data) {
   let greatestDecrease = { date: "", amount: 0 };
   for (let i = 1; i < data.length; i++) {
@@ -150,15 +155,13 @@ function findGreatestDecrease(data) {
   return greatestDecrease;
 }
 
-//check the above formulas make sense, then console.log
-//git push the below
-//everything looks correct except the average change
-
+//
 console.log("Financial Analysis");
 console.log("Total Months:", calculateTotalMonths(finances));
 console.log("Total: $", calculateNetTotal(finances));
-//doesn't look quite right, return to the drawing board
+
 console.log("Average Change: $", calculateAverageChange(finances).toFixed(2));
+//using 'to fixed' here returns a number with a specific number of decimal places, here it's two
 
 //greatest increase in profits/losses
 const greatestIncrease = findGreatestIncrease(finances);
