@@ -157,6 +157,7 @@ function findGreatestDecrease(data) {
 
 //
 console.log("Financial Analysis");
+console.log("------------------------------------------------------------")
 console.log("Total Months:", calculateTotalMonths(finances));
 console.log("Total: $", calculateNetTotal(finances));
 
