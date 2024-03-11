@@ -23,7 +23,7 @@ In the console section of the Chrome page, exists the list of the resulting calc
 ## Author
 
 Lauren Eaton
-https://github.com/eatontechnology
+https://github.com/eaton-mess
 
 ## License
 
